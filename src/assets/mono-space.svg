@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Thumbnail Mono Space">
+  <defs>
+    <linearGradient id="msbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#161618"/><stop offset="1" stop-color="#08080a"/>
+    </linearGradient>
+    <filter id="msgrain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#msbg)"/>
+  <!-- koridor perspektif -->
+  <g stroke="#3a3a42" stroke-width="2" fill="none">
+    <rect x="330" y="220" width="140" height="160"/>
+    <rect x="270" y="170" width="260" height="260"/>
+    <rect x="200" y="110" width="400" height="380"/>
+    <rect x="120" y="40" width="560" height="520"/>
+    <line x1="330" y1="220" x2="120" y2="40"/><line x1="470" y1="220" x2="680" y2="40"/>
+    <line x1="330" y1="380" x2="120" y2="560"/><line x1="470" y1="380" x2="680" y2="560"/>
+  </g>
+  <rect x="392" y="282" width="16" height="36" fill="#ff2b2b"/>
+  <circle cx="400" cy="300" r="120" fill="none" stroke="#55555e" stroke-width="1" stroke-dasharray="4 8"/>
+  <text x="60" y="545" font-family="Arial, sans-serif" font-size="44" font-weight="900" fill="#f5f5f5" letter-spacing="6">MONO</text>
+  <text x="60" y="575" font-family="Arial, sans-serif" font-size="20" fill="#8f8f99" letter-spacing="10">SPACE / 01</text>
+  <rect width="800" height="600" filter="url(#msgrain)" opacity="0.10"/>
+</svg>

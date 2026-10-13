@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Thumbnail Chrome Type">
+  <defs>
+    <linearGradient id="ctchrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5f5f5"/><stop offset="0.45" stop-color="#55555e"/>
+      <stop offset="0.55" stop-color="#1a1a1e"/><stop offset="1" stop-color="#8f8f99"/>
+    </linearGradient>
+    <filter id="ctgrain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="#0a0a0c"/>
+  <g stroke="#26262c" stroke-width="1">
+    <line x1="0" y1="120" x2="800" y2="120"/><line x1="0" y1="300" x2="800" y2="300"/><line x1="0" y1="480" x2="800" y2="480"/>
+  </g>
+  <text x="400" y="400" font-family="Georgia, serif" font-size="330" font-weight="900" text-anchor="middle" fill="url(#ctchrome)">Aa</text>
+  <rect x="588" y="140" width="14" height="90" fill="#ff2b2b"/>
+  <text x="60" y="545" font-family="Arial, sans-serif" font-size="40" font-weight="900" fill="#f5f5f5" letter-spacing="4">CHROME</text>
+  <text x="60" y="575" font-family="Arial, sans-serif" font-size="20" fill="#8f8f99" letter-spacing="10">TYPE / 03</text>
+  <rect width="800" height="600" filter="url(#ctgrain)" opacity="0.10"/>
+</svg>

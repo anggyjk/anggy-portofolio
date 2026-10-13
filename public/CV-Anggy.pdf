@@ -1,0 +1,32 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 661 >>
+stream
+BT /F1 12 Tf 50 760 Td 28 16 Tf (ANGGY) Tj T* 13 16 Tf (Creative Developer / Front-End Developer) Tj T* 10 16 Tf () Tj T* 11 16 Tf (namaanda@email.com  |  Bandung, Indonesia) Tj T* 10 16 Tf () Tj T* 13 16 Tf (TENTANG) Tj T* 11 16 Tf (Mahasiswa Informatika dan developer kreatif. Fokus pada) Tj T* 11 16 Tf (web development, UI/UX, dan desain digital.) Tj T* 10 16 Tf () Tj T* 13 16 Tf (SKILL) Tj T* 11 16 Tf (HTML, CSS, JavaScript, React, Java, UI/UX Design,) Tj T* 11 16 Tf (Git, Responsive Web Design) Tj T* 10 16 Tf () Tj T* 13 16 Tf (CATATAN) Tj T* 11 16 Tf (Dokumen contoh. Ganti file ini di public/CV-Anggy.pdf) Tj T* 11 16 Tf (dengan CV asli Anda.) Tj ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1023
+%%EOF

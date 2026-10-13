@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" role="img" aria-label="Ilustrasi gaya tinta iblis bertanduk dengan rambut panjang menutupi wajah">
+  <defs>
+    <linearGradient id="ihair" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8f8f96"/><stop offset="0.35" stop-color="#d6d6dc"/>
+      <stop offset="0.6" stop-color="#b5b5bc"/><stop offset="1" stop-color="#6a6a72"/>
+    </linearGradient>
+    <linearGradient id="ihorn" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#0d0d0f"/><stop offset="1" stop-color="#3d3d46"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sayap kiri -->
+  <path d="M150 250 C100 230 55 235 20 260 C45 285 42 315 25 345 C60 345 82 360 92 385 C120 378 142 385 152 405 C190 400 215 420 228 450 L200 470 C160 430 110 420 60 430 Z" fill="#0b0b0d" stroke="#3a3a42" stroke-width="3"/>
+  <path d="M60 430 C120 420 170 435 205 470" stroke="#e8e8e8" stroke-width="2" fill="none" opacity="0.5"/>
+  <!-- sayap kanan -->
+  <path d="M450 250 C500 230 545 235 580 260 C555 285 558 315 575 345 C540 345 518 360 508 385 C480 378 458 385 448 405 C410 400 385 420 372 450 L400 470 C440 430 490 420 540 430 Z" fill="#0b0b0d" stroke="#3a3a42" stroke-width="3"/>
+
+  <!-- tanduk kiri besar -->
+  <path d="M268 190 C230 160 190 150 150 158 C185 168 205 185 215 210 C200 195 180 188 160 190 C175 210 200 245 235 260 Z" fill="url(#ihorn)" stroke="#55555e" stroke-width="2"/>
+  <path d="M250 175 C215 150 180 145 150 155 M235 200 C210 180 185 175 165 180" stroke="#0a0a0b" stroke-width="3" fill="none"/>
+  <path d="M160 190 C175 210 200 245 235 260" stroke="#e8e8e8" stroke-width="2" fill="none" opacity="0.6"/>
+  <!-- tanduk kiri runcing ke atas -->
+  <path d="M285 175 C275 130 265 90 250 50 C275 85 295 125 305 170 Z" fill="url(#ihorn)" stroke="#55555e" stroke-width="2"/>
+  <!-- tanduk kanan besar -->
+  <path d="M332 190 C370 160 410 150 450 158 C415 168 395 185 385 210 C400 195 420 188 440 190 C425 210 400 245 365 260 Z" fill="url(#ihorn)" stroke="#55555e" stroke-width="2"/>
+  <path d="M350 175 C385 150 420 145 450 155" stroke="#0a0a0b" stroke-width="3" fill="none"/>
+  <path d="M440 190 C425 210 400 245 365 260" stroke="#e8e8e8" stroke-width="2" fill="none" opacity="0.6"/>
+  <!-- tanduk kanan runcing -->
+  <path d="M330 165 C345 120 360 80 378 44 C372 95 360 135 348 175 Z" fill="url(#ihorn)" stroke="#55555e" stroke-width="2"/>
+
+  <!-- kegelapan wajah -->
+  <ellipse cx="300" cy="265" rx="52" ry="58" fill="#050506"/>
+
+  <!-- rambut panjang menutupi wajah -->
+  <path d="M300 190 C262 190 244 220 244 258 L236 560 C236 640 244 700 252 740 L348 740 C356 700 364 640 364 560 L356 258 C356 220 338 190 300 190 Z" fill="url(#ihair)"/>
+  <g stroke="#3a3a40" stroke-width="2.5" opacity="0.85">
+    <path d="M262 240 C258 360 256 500 260 720"/>
+    <path d="M278 235 C275 360 274 510 277 730"/>
+    <path d="M294 233 C292 360 292 510 293 735"/>
+    <path d="M310 233 C311 360 312 510 311 735"/>
+    <path d="M326 235 C328 360 330 510 328 730"/>
+    <path d="M342 242 C345 360 347 500 344 720"/>
+    <path d="M252 260 C249 370 248 500 251 700"/>
+    <path d="M352 262 C354 370 355 500 352 700"/>
+  </g>
+  <g stroke="#f2f2f2" stroke-width="1.5" opacity="0.5">
+    <path d="M270 250 C267 370 266 510 269 710"/>
+    <path d="M302 240 C301 370 301 520 302 730"/>
+    <path d="M334 250 C336 370 337 510 335 710"/>
+  </g>
+
+  <!-- bahu + lengan kiri berotot -->
+  <path d="M244 340 C200 350 170 380 155 425 C145 460 140 500 142 540 L210 560 C215 510 225 460 245 425 Z" fill="#1b1b1f" stroke="#3a3a42" stroke-width="2"/>
+  <g stroke="#0a0a0b" stroke-width="2.5" fill="none" opacity="0.9">
+    <path d="M235 360 C200 375 178 405 168 445"/>
+    <path d="M228 390 C200 410 185 440 180 475"/>
+    <path d="M222 420 C202 445 192 475 190 505"/>
+  </g>
+  <!-- tangan + cakar -->
+  <path d="M142 540 C138 570 140 600 150 625 L205 635 C200 610 198 585 200 560 Z" fill="#8f8f96"/>
+  <path d="M150 625 L144 660 L156 658 Z M168 628 L166 666 L178 660 Z M186 630 L188 664 L198 656 Z M202 628 L208 658 L216 648 Z" fill="#2b2b31"/>
+  <path d="M144 660 L156 658 M166 666 L178 660" stroke="#f2f2f2" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- bahu kanan -->
+  <path d="M356 340 C395 350 420 375 432 410 L410 430 C395 400 375 380 352 368 Z" fill="#141417" stroke="#3a3a42" stroke-width="2"/>
+
+  <!-- torso bawah menyatu rambut -->
+  <path d="M244 560 C240 620 242 680 248 740 L352 740 C358 680 360 620 356 560 Z" fill="#101013"/>
+
+  <!-- cipratan tinta -->
+  <g fill="#3d3d46">
+    <circle cx="80" cy="150" r="4"/><circle cx="110" cy="200" r="2.5"/><circle cx="60" cy="330" r="3"/>
+    <circle cx="95" cy="520" r="5"/><circle cx="70" cy="600" r="2.5"/><circle cx="130" cy="660" r="3.5"/>
+    <circle cx="520" cy="150" r="4"/><circle cx="490" cy="210" r="2.5"/><circle cx="545" cy="330" r="3"/>
+    <circle cx="510" cy="530" r="5"/><circle cx="535" cy="610" r="2.5"/><circle cx="475" cy="665" r="3.5"/>
+    <circle cx="300" cy="90" r="3"/><circle cx="200" cy="90" r="2"/><circle cx="400" cy="95" r="2"/>
+  </g>
+  <g stroke="#3d3d46" stroke-width="2">
+    <line x1="40" y1="420" x2="40" y2="470"/><line x1="560" y1="420" x2="560" y2="470"/>
+    <line x1="150" y1="80" x2="150" y2="110"/><line x1="450" y1="80" x2="450" y2="110"/>
+  </g>
+</svg>

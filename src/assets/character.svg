@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 780" role="img" aria-label="Ilustrasi orisinal iblis bertanduk duduk dengan sayap kelelawar">
+  <defs>
+    <linearGradient id="dskin" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0c0c0e"/><stop offset="0.7" stop-color="#1e1e23"/><stop offset="1" stop-color="#38383f"/>
+    </linearGradient>
+    <linearGradient id="dhorn" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#3a3a42"/><stop offset="0.6" stop-color="#6a6a75"/><stop offset="1" stop-color="#c9c9d1"/>
+    </linearGradient>
+    <linearGradient id="dwing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#232329"/><stop offset="1" stop-color="#0b0b0d"/>
+    </linearGradient>
+    <radialGradient id="deye" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff5a5a"/><stop offset="0.55" stop-color="#ff2b2b"/><stop offset="1" stop-color="#7a0d0d"/>
+    </radialGradient>
+  </defs>
+
+  <!-- lingkaran rune -->
+  <g opacity="0.8">
+    <ellipse cx="300" cy="700" rx="190" ry="30" fill="none" stroke="#ff2b2b" stroke-width="2" opacity="0.55"/>
+    <ellipse cx="300" cy="700" rx="150" ry="23" fill="none" stroke="#ff2b2b" stroke-width="1" opacity="0.3"/>
+    <g stroke="#ff2b2b" stroke-width="2" opacity="0.55">
+      <line x1="300" y1="664" x2="300" y2="676"/><line x1="300" y1="724" x2="300" y2="736"/>
+      <line x1="128" y1="700" x2="140" y2="700"/><line x1="460" y1="700" x2="472" y2="700"/>
+    </g>
+  </g>
+  <ellipse cx="300" cy="700" rx="150" ry="22" fill="#000" opacity="0.6"/>
+
+  <!-- sayap kelelawar -->
+  <path d="M252 300 C180 260 110 240 48 246 C70 280 66 310 50 340 C80 340 96 352 100 372 C126 362 150 366 162 382 C200 380 232 400 252 430 Z" fill="url(#dwing)" stroke="#3a3a42" stroke-width="3"/>
+  <path d="M348 300 C420 260 490 240 552 246 C530 280 534 310 550 340 C520 340 504 352 500 372 C474 362 450 366 438 382 C400 380 368 400 348 430 Z" fill="url(#dwing)" stroke="#3a3a42" stroke-width="3"/>
+  <g stroke="#4a4a55" stroke-width="3" fill="none">
+    <path d="M248 306 L120 268 L132 330 Z M248 330 L170 350 M244 370 L196 372"/>
+    <path d="M352 306 L480 268 L468 330 Z M352 330 L430 350 M356 370 L404 372"/>
+  </g>
+  <path d="M500 372 C520 366 536 352 550 340" stroke="#e8e8e8" stroke-width="2" fill="none" opacity="0.5"/>
+
+  <!-- ekor melingkar + ujung sekop -->
+  <path d="M352 500 C420 520 440 580 400 630 C375 660 330 660 318 636" fill="none" stroke="#1a1a1e" stroke-width="18" stroke-linecap="round"/>
+  <path d="M352 500 C420 520 440 580 400 630" fill="none" stroke="#3d3d46" stroke-width="3" opacity="0.8"/>
+  <path d="M318 612 L296 636 L318 660 L340 636 Z" fill="#2b2b32" stroke="#e8e8e8" stroke-width="2"/>
+
+  <!-- kaki -->
+  <path d="M232 468 L216 650 L254 650 L268 474 Z" fill="#111114"/>
+  <path d="M236 420 L268 420 L272 470 L240 470 Z" fill="#1c1c21"/>
+  <path d="M252 386 L294 378 C308 376 312 390 304 402 L288 466 Z" fill="url(#dskin)"/>
+  <path d="M348 386 L306 378 C292 376 288 390 296 402 L312 466 Z" fill="#101013"/>
+  <!-- cakar kaki -->
+  <path d="M208 646 L208 680 C208 690 216 694 228 694 L266 694 C274 694 278 688 276 680 L270 646 Z" fill="#26262c"/>
+  <path d="M216 694 L228 694 L224 706 L212 706 Z M240 694 L252 694 L250 708 L238 708 Z M258 694 L268 694 L268 706 L258 706 Z" fill="#c9c9d1"/>
+  <path d="M330 646 L322 680 C320 690 326 694 336 694 L374 694 C386 694 392 688 390 678 L386 646 Z" fill="#1c1c20"/>
+  <path d="M336 694 L348 694 L346 706 L334 706 Z M356 694 L368 694 L368 706 L356 706 Z" fill="#8f8f96"/>
+
+  <!-- torso -->
+  <path d="M240 296 C234 360 232 424 240 476 L360 476 C368 424 366 360 360 296 C340 280 320 274 300 274 C280 274 260 280 240 296 Z" fill="url(#dskin)"/>
+  <!-- otot dada + perut -->
+  <path d="M262 320 C276 330 290 332 300 332 C310 332 324 330 338 320" stroke="#0a0a0b" stroke-width="4" fill="none"/>
+  <path d="M300 340 L300 460 M272 380 L328 380 M276 414 L324 414 M282 446 L318 446" stroke="#0a0a0b" stroke-width="3"/>
+  <path d="M358 300 C364 358 364 418 358 470" stroke="#f2f2f2" stroke-width="3" fill="none" opacity="0.9"/>
+  <!-- sisik bahu -->
+  <path d="M244 296 L262 284 L258 306 Z M356 296 L338 284 L342 306 Z" fill="#3d3d46"/>
+
+  <!-- lengan -->
+  <path d="M242 306 C230 358 228 420 240 470 L268 468 C260 418 262 364 270 320 Z" fill="#1b1b1f"/>
+  <path d="M358 306 C370 358 372 420 360 470 L332 468 C340 418 338 364 330 320 Z" fill="#232329"/>
+  <path d="M366 330 C374 376 374 422 364 464" stroke="#f2f2f2" stroke-width="2.5" fill="none" opacity="0.7"/>
+  <!-- cakar tangan -->
+  <g fill="#c9c9d1">
+    <ellipse cx="286" cy="466" rx="18" ry="22"/>
+    <ellipse cx="314" cy="466" rx="18" ry="22" fill="#a9a9b1"/>
+  </g>
+  <path d="M272 484 L268 498 L276 498 Z M286 486 L284 502 L292 500 Z M300 486 L300 502 L308 498 Z M314 486 L316 502 L324 496 Z" fill="#e8e8e8"/>
+
+  <!-- leher -->
+  <path d="M287 240 L287 278 L313 278 L313 240 Z" fill="#8f8f96"/>
+
+  <!-- kepala -->
+  <path d="M300 150 C268 150 248 178 248 212 C248 244 266 266 292 272 L308 272 C334 266 352 244 352 212 C352 178 332 150 300 150 Z" fill="#b9b9c0"/>
+  <path d="M300 150 C332 150 352 178 352 212 L340 212 C342 184 324 162 300 160 Z" fill="#7a7a84"/>
+  <!-- rahang + taring -->
+  <path d="M272 244 C284 258 316 258 328 244 L322 244 C312 252 288 252 278 244 Z" fill="#0d0d0f"/>
+  <path d="M280 246 L284 258 L290 246 Z M310 246 L316 258 L320 246 Z" fill="#f5f5f5"/>
+  <!-- mata menyala -->
+  <g>
+    <path d="M262 208 L292 214 L288 226 L264 220 Z" fill="url(#deye)"/>
+    <path d="M338 208 L308 214 L312 226 L336 220 Z" fill="url(#deye)"/>
+    <circle cx="278" cy="218" r="2.5" fill="#fff"/>
+    <circle cx="322" cy="218" r="2.5" fill="#fff"/>
+  </g>
+  <!-- alis marah -->
+  <path d="M258 198 L294 206 M342 198 L306 206" stroke="#2b2b31" stroke-width="6" stroke-linecap="round"/>
+  <!-- telinga runcing -->
+  <path d="M250 200 L222 184 L244 222 Z" fill="#8f8f96"/>
+  <path d="M350 200 L378 184 L356 222 Z" fill="#6a6a75"/>
+  <path d="M378 184 L356 222" stroke="#e8e8e8" stroke-width="2" opacity="0.7"/>
+
+  <!-- TANDUK besar melengkung -->
+  <path d="M262 158 C230 140 200 140 176 158 C200 160 214 168 222 182 C232 166 246 158 262 158 Z" fill="url(#dhorn)"/>
+  <path d="M176 158 C150 168 132 190 128 218 C144 202 158 194 172 192 C162 182 164 168 176 158 Z" fill="url(#dhorn)"/>
+  <path d="M338 158 C370 140 400 140 424 158 C400 160 386 168 378 182 C368 166 354 158 338 158 Z" fill="url(#dhorn)"/>
+  <path d="M424 158 C450 168 468 190 472 218 C456 202 442 194 428 192 C438 182 436 168 424 158 Z" fill="url(#dhorn)"/>
+  <path d="M150 172 C140 186 134 202 132 216" stroke="#f2f2f2" stroke-width="2.5" fill="none" opacity="0.8"/>
+  <path d="M450 172 C460 186 466 202 468 216" stroke="#f2f2f2" stroke-width="2.5" fill="none" opacity="0.8"/>
+  <!-- tanduk kecil dahi -->
+  <path d="M286 150 L280 128 L296 144 Z M314 150 L320 128 L304 144 Z" fill="#6a6a75"/>
+</svg>
