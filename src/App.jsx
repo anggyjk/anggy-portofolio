@@ -13,6 +13,7 @@ import ScrollProgress from "./components/ScrollProgress";
 import NameTicker from "./components/NameTicker";
 import BackToTop from "./components/BackToTop";
 import Backsound from "./components/Backsound";
+import MobileBackButton from "./components/MobileBackButton";
 import SwordCursor from "./components/SwordCursor";
 import SectionDivider from "./components/SectionDivider";
 
@@ -41,6 +42,7 @@ export default function App() {
       <Footer />
       <BackToTop />
       <Backsound />
+      <MobileBackButton />
       <ProjectModal project={selected} onClose={() => setSelected(null)} />
     </div>
   );
