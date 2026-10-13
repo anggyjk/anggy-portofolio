@@ -637,16 +637,17 @@ function FallbackDevil({ reduce }) {
 }
 
 /* ---------- Rig patung: posisi kanan + float idle + parallax ---------- */
-function StatueRig({ reduce, statueX, children }) {
+function StatueRig({ reduce, statueX, isNarrow, children }) {
   return (
     <group position={[statueX, STATUE_Y, 0]}>
       {/* Idle floating pelan (sine wave) — objek terasa bernapas dan hidup */}
       <Float speed={reduce ? 0 : 1.0} rotationIntensity={0.06} floatIntensity={0.32}>
         <ParallaxRig reduce={reduce}>{children}</ParallaxRig>
       </Float>
-      {/* Hanya Smoke/Mist (belakang+bawah) + Cosmic Dust (depan) — tanpa titik kotak */}
-      <SmokePuffs reduce={reduce} />
-      <CosmicDust reduce={reduce} />
+      {/* Hanya Smoke/Mist (belakang+bawah) + Cosmic Dust (depan) — tanpa titik kotak.
+          Jumlah dikurangi di HP agar render ringan. */}
+      <SmokePuffs reduce={reduce} count={isNarrow ? 10 : 16} />
+      <CosmicDust reduce={reduce} count={isNarrow ? 60 : 110} />
       <ContactShadows position={[0, -1.35, 0]} opacity={0.85} scale={12} blur={1.1} far={3.5} color="#000000" />
     </group>
   );
@@ -711,6 +712,7 @@ export default function Hero() {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.55 }}
               aria-hidden="true"
+              className="hero-blood"
               style={{ marginTop: 10 }}
             >
               <BloodDrips count={7} width="min(320px, 78vw)" height={54} />
@@ -786,10 +788,10 @@ export default function Hero() {
           >
             <Canvas
               shadows
-              dpr={[1, 2]}
+              dpr={isNarrow ? [1, 1.5] : [1, 2]}
               // Medium shot kepala–paha ala referensi, patung di kanan via statueX.
               camera={{ position: [0, STATUE_Y + 0.95, 4.2], fov: 40 }}
-              gl={{ alpha: true, antialias: true }}
+              gl={{ alpha: true, antialias: !isNarrow }}
               style={{ background: "transparent", touchAction: "pan-y" }}
             >
               <fog attach="fog" args={["#080808", 4, 13]} />
@@ -823,13 +825,13 @@ export default function Hero() {
               <spotLight position={[-3, -1, 3]} intensity={1.6} angle={0.6} penumbra={0.8} distance={12} color="#ff3300" />
 
               {modelFailed ? (
-                <StatueRig reduce={reduce} statueX={statueX}>
+                <StatueRig reduce={reduce} statueX={statueX} isNarrow={isNarrow}>
                   <FallbackDevil reduce={reduce} />
                 </StatueRig>
               ) : (
                 <Suspense fallback={<Loader />}>
                   <ModelErrorBoundary onError={() => setModelFailed(true)}>
-                    <StatueRig reduce={reduce} statueX={statueX}>
+                    <StatueRig reduce={reduce} statueX={statueX} isNarrow={isNarrow}>
                       <LilithStatue reduce={reduce} />
                       {/* Halo ring + orbital 3D melingkari kepala — menyatu via Bloom */}
                       <HaloRings reduce={reduce} />
@@ -840,7 +842,7 @@ export default function Hero() {
 
               {/* Bloom halus (threshold tinggi: hanya halo/orbit/bara yang glow,
                   marmer putih tetap crisp) + vignette sinematik */}
-              <EffectComposer multisampling={4}>
+              <EffectComposer multisampling={isNarrow ? 0 : 4}>
                 <Bloom mipmapBlur intensity={0.65} luminanceThreshold={0.6} luminanceSmoothing={0.3} />
                 <Vignette offset={0.2} darkness={0.85} />
               </EffectComposer>
@@ -899,6 +901,8 @@ export default function Hero() {
           .hero-left .hero-name { font-size: clamp(3.4rem, 19vw, 7rem); }
           /* Kanvas diredupkan di HP: teks tajam, patung jadi hantu sinematik di belakang */
           .hero-3d-wrap { opacity: 0.55; }
+          /* Darah hero diperkecil di HP agar tidak menumpuk teks */
+          .hero-blood { transform: scale(0.78); transform-origin: left top; }
           /* Mask mengikuti patung yang bergeser ke kanan di HP */
           .hero-3d-wrap canvas {
             -webkit-mask-image: radial-gradient(ellipse 95% 90% at 68% 46%, #000 55%, transparent 82%) !important;

@@ -116,6 +116,7 @@ export default function Navbar() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.6 }}
               aria-hidden="true"
+              className="nav-blood"
               style={{ position: "absolute", bottom: -4, left: "50%", transform: "translateX(-50%)", pointerEvents: "none" }}
             >
               <BloodDrips count={5} width={190} height={42} />
@@ -160,6 +161,8 @@ export default function Navbar() {
       <style>{`@media (max-width: 899px) { .nav-left, .nav-desktop { display: none !important; } .nav-burger { display: grid !important; place-items: center; } }
         .nav-brand-bleed { animation: brandBleed 3.2s ease-in-out infinite; }
         @media (max-width: 430px) { .nav-brand { font-size: 19px !important; letter-spacing: 1px !important; } }
+        /* Darah navbar disembunyikan di HP agar rapi */
+        @media (max-width: 899px) { .nav-blood { display: none !important; } }
         @keyframes brandBleed { 0%, 100% { text-shadow: 0 0 0 rgba(255,43,43,0); } 50% { text-shadow: 0 0 24px rgba(255,43,43,0.7), 0 6px 18px rgba(180,10,20,0.5); } }
       `}</style>
     </>
