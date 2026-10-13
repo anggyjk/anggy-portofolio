@@ -12,6 +12,7 @@ import CursorGlow from "./components/CursorGlow";
 import ScrollProgress from "./components/ScrollProgress";
 import NameTicker from "./components/NameTicker";
 import BackToTop from "./components/BackToTop";
+import Backsound from "./components/Backsound";
 import SwordCursor from "./components/SwordCursor";
 import SectionDivider from "./components/SectionDivider";
 
@@ -39,6 +40,7 @@ export default function App() {
       </main>
       <Footer />
       <BackToTop />
+      <Backsound />
       <ProjectModal project={selected} onClose={() => setSelected(null)} />
     </div>
   );
