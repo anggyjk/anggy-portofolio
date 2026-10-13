@@ -47,7 +47,7 @@ export default function ProjectModal({ project, onClose }) {
               <span style={{ position: "absolute", left: 20, bottom: 16, fontFamily: "var(--font-display)", fontWeight: 700, letterSpacing: 3, background: "rgba(0,0,0,0.6)", border: "1px solid rgba(255,255,255,0.16)", padding: "6px 14px", borderRadius: 999 }}>{project.no} — {project.year}</span>
             </div>
 
-            <div style={{ padding: "28px 28px 32px" }}>
+            <div className="modal-pad" style={{ padding: "28px 28px 32px" }}>
               <p className="text-accent" style={{ margin: 0, fontSize: 12, letterSpacing: 3, textTransform: "uppercase", fontWeight: 600 }}>{project.category}</p>
               {project.badge && (
                 <p role="status" style={{ display: "inline-flex", alignItems: "center", gap: 8, margin: "12px 0 0", fontSize: 13, fontWeight: 700, padding: "8px 18px", borderRadius: 999, background: "rgba(255,43,43,0.14)", border: "1px solid rgba(255,43,43,0.5)", color: "#ff6b6b" }}>
@@ -65,7 +65,7 @@ export default function ProjectModal({ project, onClose }) {
               </div>
 
               {/* Galeri: crop berbeda dari thumbnail yang sama */}
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginTop: 22 }}>
+              <div className="modal-gallery" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginTop: 22 }}>
                 <div style={{ borderRadius: 14, overflow: "hidden", border: "1px solid var(--border)", aspectRatio: "16/10" }}>
                   <img src={project.thumb} alt={`Detail tampilan ${project.title} 1`} loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "left center", transform: "scale(1.4)" }} />
                 </div>
@@ -95,6 +95,12 @@ export default function ProjectModal({ project, onClose }) {
           </motion.div>
         </motion.div>
       )}
+      <style>{`
+        @media (max-width: 520px) {
+          .modal-pad { padding: 20px 18px 24px !important; }
+          .modal-gallery { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
     </AnimatePresence>
   );
 }

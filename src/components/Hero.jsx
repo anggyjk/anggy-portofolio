@@ -671,8 +671,9 @@ export default function Hero() {
     mq.addEventListener("change", fn);
     return () => mq.removeEventListener("change", fn);
   }, []);
-  // Patung besar di kanan tapi tangan terentang menimpa teks ANZY (ala referensi).
-  const statueX = isNarrow ? 0 : 0.7;
+  // Desktop: patung besar di kanan, tangan menimpa teks.
+  // Mobile: patung di kanan agak ke tengah + diredupkan agar teks kiri rapi terbaca.
+  const statueX = isNarrow ? 0.35 : 0.7;
 
   return (
     <section
@@ -895,7 +896,14 @@ export default function Hero() {
         .hero-3d-wrap:active { cursor: grabbing; }
         @media (max-width: 899px) {
           .hero-left { padding: 124px 0 64px; }
-          .hero-left .hero-name { font-size: clamp(4rem, 21vw, 7rem); }
+          .hero-left .hero-name { font-size: clamp(3.4rem, 19vw, 7rem); }
+          /* Kanvas diredupkan di HP: teks tajam, patung jadi hantu sinematik di belakang */
+          .hero-3d-wrap { opacity: 0.55; }
+          /* Mask mengikuti patung yang bergeser ke kanan di HP */
+          .hero-3d-wrap canvas {
+            -webkit-mask-image: radial-gradient(ellipse 95% 90% at 68% 46%, #000 55%, transparent 82%) !important;
+            mask-image: radial-gradient(ellipse 95% 90% at 68% 46%, #000 55%, transparent 82%) !important;
+          }
           .hero-ambient { left: 50% !important; }
           .hero-name { overflow-wrap: anywhere; }
         }
