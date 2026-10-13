@@ -111,6 +111,50 @@ function Loader() {
   );
 }
 
+/* Indikator loading HTML di luar canvas: terlihat jelas selama 21MB diunduh. */
+function LoadOverlay() {
+  const { active, progress } = useProgress();
+  if (!active) return null;
+  const pct = Math.round(progress);
+  return (
+    <div
+      aria-hidden="true"
+      style={{
+        position: "absolute",
+        left: "50%",
+        bottom: 26,
+        transform: "translateX(-50%)",
+        zIndex: 3,
+        pointerEvents: "none",
+        display: "flex",
+        alignItems: "center",
+        gap: 12,
+        background: "rgba(0,0,0,0.55)",
+        border: "1px solid rgba(255,255,255,0.12)",
+        borderRadius: 999,
+        padding: "9px 18px",
+        fontSize: 11,
+        letterSpacing: 3,
+        color: "var(--muted)",
+        whiteSpace: "nowrap",
+      }}
+    >
+      <span
+        style={{
+          width: 8,
+          height: 8,
+          borderRadius: "50%",
+          background: "var(--accent)",
+          boxShadow: "0 0 12px rgba(255,43,43,0.9)",
+          animation: "loadPulse 1.2s ease-in-out infinite",
+        }}
+      />
+      MEMAHAT LILITH… {pct}%
+      <style>{`@keyframes loadPulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }`}</style>
+    </div>
+  );
+}
+
 /* ---------- Patung Lilith dari /lilith.glb (statis, tanpa animasi) ---------- */
 function LilithStatue({ reduce }) {
   const group = useRef(null);
@@ -813,6 +857,9 @@ export default function Hero() {
                 maxPolarAngle={Math.PI / 2}
               />
             </Canvas>
+
+            {/* Persen loading patung (di luar canvas, selalu terlihat) */}
+            <LoadOverlay />
 
             {/* Overlay 4 sisi: kiri (teks→3D) + kanan + atas + bawah.
                 Tepi canvas larut total ke background, tanpa garis kotak. */}
