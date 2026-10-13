@@ -62,7 +62,7 @@ export default function Navbar() {
               EST. 2023
             </span>
             <span
-              className={active === "home" ? "nav-brand-bleed" : undefined}
+              className={`nav-brand${active === "home" ? " nav-brand-bleed" : ""}`}
               style={{
                 display: "block",
                 fontFamily: "var(--font-hero)",
@@ -159,6 +159,7 @@ export default function Navbar() {
 
       <style>{`@media (max-width: 899px) { .nav-left, .nav-desktop { display: none !important; } .nav-burger { display: grid !important; place-items: center; } }
         .nav-brand-bleed { animation: brandBleed 3.2s ease-in-out infinite; }
+        @media (max-width: 430px) { .nav-brand { font-size: 19px !important; letter-spacing: 1px !important; } }
         @keyframes brandBleed { 0%, 100% { text-shadow: 0 0 0 rgba(255,43,43,0); } 50% { text-shadow: 0 0 24px rgba(255,43,43,0.7), 0 6px 18px rgba(180,10,20,0.5); } }
       `}</style>
     </>

@@ -668,7 +668,7 @@ export default function Hero() {
               aria-hidden="true"
               style={{ marginTop: 10 }}
             >
-              <BloodDrips count={7} width={320} height={54} />
+              <BloodDrips count={7} width="min(320px, 78vw)" height={54} />
             </motion.div>
 
             <motion.div
