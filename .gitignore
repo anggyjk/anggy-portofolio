@@ -4,6 +4,9 @@ node_modules/
 # build output
 dist/
 
+# file 3D lama yang tidak dipakai (231MB, melebihi limit GitHub)
+public/assets/devil.glb
+
 # logs
 npm-debug.log*
 *.log
